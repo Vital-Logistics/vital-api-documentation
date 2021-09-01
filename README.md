@@ -1,5 +1,6 @@
 # Vital Logistics v1 API Documentation
 
+Main URL: https://www.vitallogistics.ca/<br>
 Endpoints:
 
 1. [Rate Quote](#RateQuote)
