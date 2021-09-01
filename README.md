@@ -48,7 +48,7 @@ Endpoints:
 | Authorization | Bearer Token |
 | Endpoint | /api/v1/shipments/tracking |
 | Method | GET |
-| Request Example | See [Tracking Request Examples](#RequestExamples) |
+| Request Example | { "tracking_numbers":"1Z0596VE2093587321,1Z0596VE2090867319" } |
 | Response Example | See [Tracking Response Examples](#TrackingResponseExamples) |
 
 ## <a name="Void"></a>Void
@@ -782,7 +782,198 @@ Endpoints:
   <summary>Tracking response</summary>
   
   ```json
-  ** Currently being refactored. Please check again later. **
+  [
+    {
+        "tracks": {
+            "1Z0596VE2093587321": [
+                {
+                    "Shipper": {
+                        "ShipperNumber": "0596VE",
+                        "Address": {
+                            "AddressLine1": "6-295 QUEEN ST E",
+                            "City": "BRAMPTON",
+                            "StateProvinceCode": "ON",
+                            "PostalCode": "L6W4S6",
+                            "CountryCode": "CA"
+                        }
+                    },
+                    "ShipTo": {
+                        "Address": {
+                            "City": "TORONTO",
+                            "StateProvinceCode": "ON",
+                            "PostalCode": "M3N1Y7",
+                            "CountryCode": "CA"
+                        }
+                    },
+                    "ShipmentWeight": {
+                        "UnitOfMeasurement": {
+                            "Code": "LBS"
+                        },
+                        "Weight": "1.00"
+                    },
+                    "Service": {
+                        "Code": "011",
+                        "Description": "UPS Standard"
+                    },
+                    "ShipmentIdentificationNumber": "1Z0596VE2093587321",
+                    "PickupDate": "20210901",
+                    "DeliveryDateUnavailable": {
+                        "Type": "Scheduled Delivery",
+                        "Description": "Scheduled Delivery Date is not currently available, please try back later"
+                    },
+                    "Package": {
+                        "TrackingNumber": "1Z0596VE2093587321",
+                        "DeliveryIndicator": "N",
+                        "Activity": [
+                            {
+                                "ActivityLocation": {
+                                    "Address": {
+                                        "CountryCode": "CA"
+                                    }
+                                },
+                                "Status": {
+                                    "StatusType": {
+                                        "Code": "MV",
+                                        "Description": "Voided Information Received"
+                                    },
+                                    "StatusCode": {
+                                        "Code": "VP"
+                                    }
+                                },
+                                "Date": "20210901",
+                                "Time": "140326",
+                                "GMTDate": "2021-09-01",
+                                "GMTTime": "18:03:26",
+                                "GMTOffset": "-04:00"
+                            },
+                            {
+                                "ActivityLocation": {
+                                    "Address": {
+                                        "CountryCode": "CA"
+                                    }
+                                },
+                                "Status": {
+                                    "StatusType": {
+                                        "Code": "M",
+                                        "Description": "Shipper created a label, UPS has not received the package yet."
+                                    },
+                                    "StatusCode": {
+                                        "Code": "MP"
+                                    }
+                                },
+                                "Date": "20210901",
+                                "Time": "135853",
+                                "GMTDate": "2021-09-01",
+                                "GMTTime": "17:58:53",
+                                "GMTOffset": "-04:00"
+                            }
+                        ],
+                        "PackageWeight": {
+                            "UnitOfMeasurement": {
+                                "Code": "LBS"
+                            },
+                            "Weight": "1.00"
+                        }
+                    }
+                }
+            ],
+            "1Z0596VE2090867319": [
+                {
+                    "Shipper": {
+                        "ShipperNumber": "0596VE",
+                        "Address": {
+                            "AddressLine1": "6-295 QUEEN ST E",
+                            "City": "BRAMPTON",
+                            "StateProvinceCode": "ON",
+                            "PostalCode": "L6W4S6",
+                            "CountryCode": "CA"
+                        }
+                    },
+                    "ShipTo": {
+                        "Address": {
+                            "City": "TORONTO",
+                            "StateProvinceCode": "ON",
+                            "PostalCode": "M3N1Y7",
+                            "CountryCode": "CA"
+                        }
+                    },
+                    "ShipmentWeight": {
+                        "UnitOfMeasurement": {
+                            "Code": "LBS"
+                        },
+                        "Weight": "1.00"
+                    },
+                    "Service": {
+                        "Code": "011",
+                        "Description": "UPS Standard"
+                    },
+                    "ShipmentIdentificationNumber": "1Z0596VE2090867319",
+                    "PickupDate": "20210901",
+                    "DeliveryDateUnavailable": {
+                        "Type": "Scheduled Delivery",
+                        "Description": "Scheduled Delivery Date is not currently available, please try back later"
+                    },
+                    "Package": {
+                        "TrackingNumber": "1Z0596VE2090867319",
+                        "DeliveryIndicator": "N",
+                        "Activity": [
+                            {
+                                "ActivityLocation": {
+                                    "Address": {
+                                        "CountryCode": "CA"
+                                    }
+                                },
+                                "Status": {
+                                    "StatusType": {
+                                        "Code": "MV",
+                                        "Description": "Voided Information Received"
+                                    },
+                                    "StatusCode": {
+                                        "Code": "VP"
+                                    }
+                                },
+                                "Date": "20210901",
+                                "Time": "140326",
+                                "GMTDate": "2021-09-01",
+                                "GMTTime": "18:03:26",
+                                "GMTOffset": "-04:00"
+                            },
+                            {
+                                "ActivityLocation": {
+                                    "Address": {
+                                        "CountryCode": "CA"
+                                    }
+                                },
+                                "Status": {
+                                    "StatusType": {
+                                        "Code": "M",
+                                        "Description": "Shipper created a label, UPS has not received the package yet."
+                                    },
+                                    "StatusCode": {
+                                        "Code": "MP"
+                                    }
+                                },
+                                "Date": "20210901",
+                                "Time": "135632",
+                                "GMTDate": "2021-09-01",
+                                "GMTTime": "17:56:32",
+                                "GMTOffset": "-04:00"
+                            }
+                        ],
+                        "PackageWeight": {
+                            "UnitOfMeasurement": {
+                                "Code": "LBS"
+                            },
+                            "Weight": "1.00"
+                        }
+                    }
+                }
+            ]
+        },
+        "tracks_subpackages": [],
+        "tracking_numbers": "1Z0596VE2093587321,1Z0596VE2090867319"
+    }
+]
   ```
   
 </details>
