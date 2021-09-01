@@ -41,8 +41,6 @@ Endpoints:
 
 ## <a name="Tracking"></a>Tracking
 
-\*\* Currently being refactored. Expected to be available by 2021-09-01 17:00 PT \*\*
-
 |  |  |
 | --- | --- |
 | Authorization | Bearer Token |
