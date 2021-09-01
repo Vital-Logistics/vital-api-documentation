@@ -8,7 +8,12 @@ Endpoints:
 4. [Tracking](#Tracking)
 5. [Void](#Void)
 
-<details>
+## <a name="Rating"></a>Rating
+
+| Authorization | Bearer Token |
+| ------------- | ------------ |
+| Endpoint | /api/v1/orders/ship |
+| Request Example | <details>
   <summary>Show JSON request</summary>
   
   ```json
@@ -71,14 +76,7 @@ Endpoints:
 }
   ```
   
-</details>
-
-## <a name="Rating"></a>Rating
-
-| Authorization | Bearer Token |
-| ------------- | ------------ |
-| Endpoint | /api/v1/orders/ship |
-| Request Example |  |
+</details> |
 | Response Example |  |
 
 ## <a name="Shipment"></a>Shipment
