@@ -15,7 +15,7 @@ Endpoints:
 | --- | --- |
 | Authorization | Bearer Token |
 | Endpoint | /api/v1/orders/rates |
-| Method | GET |
+| Method | POST |
 | Request Example | See [Rate Quote Request Examples](#RateQuoteRequestExamples) |
 | Response Example | See [Rate Quote Response Examples](#RateQuoteResponseExamples) |
 
@@ -45,7 +45,7 @@ Endpoints:
 | --- | --- |
 | Authorization | Bearer Token |
 | Endpoint | /api/v1/shipments/tracking |
-| Method | GET |
+| Method | POST |
 | Request Example | { "tracking_numbers":"1Z0596VE2093587321,1Z0596VE2090867319" } |
 | Response Example | See [Tracking Response Examples](#TrackingResponseExamples) |
 
